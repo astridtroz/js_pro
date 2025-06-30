@@ -31,3 +31,24 @@ const myFunction= function(){
     console.log("Hello world");
 }
 
+//++++++++++++++++++++++++++++++++++++++++++++++++
+
+//MEMORY:
+
+//Stack(Primitive)->copy, Heap(Non-Primitive)->og value
+
+let ytname="something";
+let anothername=ytname
+anothername="chaiorcode";
+console.log(ytname);
+console.log(anothername);
+
+let user1={
+    email:"sam@google.com",
+    upi:"user@ybl"
+}
+let user2=user1
+user2.email="pam@gmail.com";
+
+console.log(user1.email);
+console.log(user2.email);
