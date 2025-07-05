@@ -1,0 +1,57 @@
+<!-- html is made up of elements . An element is an individual compononent of HTML
+ most elements are container elements. that is they hold content between opening and closing tags-->
+
+<!Doctype html> <!--tells browser to expect html in this file-->
+<html lang="en"> <!--all html content is withing these html tags-->
+    <head>
+        <title>Cat Photo App</title>
+    </head><!--conatains page title and metadata-->
+    <body><!--body contains all the information-->
+        <h2>Cat Photo App</h2>
+        <main>
+            <h3>Cat Photos</h3>
+                <a href="https://www.google.com/search?sca_esv=93b16acae32a425f&rlz=1C1ONGR_enIN991IN991&sxsrf=AE3TifM1y1-c1hqNQbv_kMSijOaAQZ5L6w:1751685012966&q=cat+photos&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIemkjk18Cn72Gp24fGkjjh6xc8y8oU3IJovU34XDyOFvEl9PQhCX-bXyx8AzQGU_JUmd7tO0Sp0t0qHqXwx4ZXWZ46FMJ_5qOlBWL317zdnko09c3cS91eOWyqKC8pqNi-T4DhtjV8zWXL8UGIxO7yEoZ63L3KD6mXO4QEFSbHyfGyMpJqQ&sa=X&ved=2ahUKEwjI_dKX36SOAxXD7jgGHX2aG9UQtKgLKAF6BAgQEAE&biw=544&bih=598&dpr=1"
+                target="_blank">
+                    <p> Click here to view more cat photos</p>
+                </a>
+                <!--target=# , # is just a placeholder-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg" alt="cute cat" height="200", width="300">
+            <!--src is anc attribute and attributes are always paired with values-->
+
+            <h3>Cat Lists</h3>
+            <p>Things cats <em>love</em></p>
+            <div>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointer</li>
+                <li>lasagna</li>
+            </ul>
+            <img src="lasagna.jpeg" alt="lasagna cat" height="200", width="300">
+            <p>Things cats <strong>hate</strong></p>
+             <ol>
+                <li>fleat treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+             </ol>
+             </div class="lists"> <!--div is used to style a whole section by css
+             class is used to target all elements in that div-->
+             <img src="catgroup.jpeg" alt="cats">
+             <form action="/submit-cat-photo"> 
+                <p>Cat type</p>
+                <label for="indoor"><input type="radio" name="indoor-outdoor" id="indoor">indoor</label><br>
+                <!--order of attributes dont matter-->
+                <label for="outdoor"><input type="radio" name="indoor-outdoor" id="outdoor">outdoor</label><br>
+                <p>Personality</p>
+                <label for="loving"><input type="checkbox" name="personality" id="loving">Loving</label><br>
+                <label for="lazy"><input type="checkbox" name="personality" id="lazy">Lazy</label><br>
+                <label for="energetic"><input type="checkbox" name="personality" id="energetic">Energetic</label><br>
+                <input type="text" placeholder="cat photo URL" required><br>
+                <button type="submit">Submit</button>
+             </form>
+        </main>
+        <footer>
+            <p><small>No copyright <a href="https://www.google.com/search?q=cats+image+download&rlz=1C1ONGR_enIN991IN991&oq=cats&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgwIARAjGCcYgAQYigUyDAgCECMYJxiABBiKBTIGCAMQRRg5MgoIBBAAGLEDGIAEMg0IBRAAGIMBGLEDGIAEMhMIBhAuGIMBGMcBGLEDGNEDGIAEMg0IBxAAGIMBGLEDGIAEMhAICBAAGIMBGLEDGIAEGIoFMhAICRAAGIMBGLEDGIAEGIoF0gEHNTQ5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8">
+                 @catnip rules </small></a> </p>
+        </footer>
+    </body>
+</html>
