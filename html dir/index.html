@@ -7,20 +7,71 @@
         <title>Cat Photo App</title>
     </head><!--conatains page title and metadata-->
     <body><!--body contains all the information-->
-        <h2>Cat Photo App</h2>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+     
+       <style>
+           @media(max-width: 350px){
+            :root{
+            --clr-kin:pink;
+            
+           }
+           }
+           
+           
+            [type='checkbox']{
+                margin: 10px 0px 15px 0px;
+            }
+            .yellow-box{
+                padding: 10px;
+                
+            }
+            .silver_background{
+              
+                background-color: var(--clr-kin);
+            }
+            .thick-green-border{
+                border-color: green;
+                border-width: 11px;
+                border-style: solid;
+                border-radius: 50%;
+            }
+            .red-text {
+                color: red;
+            }
+            /*css gives more priority to id then classes
+            there can be only one id per element
+            if different class from same element are there the class that is written lower in 
+            stylesheet is executed unless the upper has properties marked with !important*/
+            #heading{ 
+                color: green;
+            }
+            p {
+                 --clr-kin:blue;
+                color: var(--clr-kin);
+                font-size: 16px;
+                font-family:  Helvetica,monospace;
+            }
+            h2 {
+                font-family: Lobster, monospace;
+            }
+        </style>
+        <h2 class="red-text" id="heading">Cat Photo App</h2>
         <main>
             <h3>Cat Photos</h3>
-                <a href="https://www.google.com/search?sca_esv=93b16acae32a425f&rlz=1C1ONGR_enIN991IN991&sxsrf=AE3TifM1y1-c1hqNQbv_kMSijOaAQZ5L6w:1751685012966&q=cat+photos&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIemkjk18Cn72Gp24fGkjjh6xc8y8oU3IJovU34XDyOFvEl9PQhCX-bXyx8AzQGU_JUmd7tO0Sp0t0qHqXwx4ZXWZ46FMJ_5qOlBWL317zdnko09c3cS91eOWyqKC8pqNi-T4DhtjV8zWXL8UGIxO7yEoZ63L3KD6mXO4QEFSbHyfGyMpJqQ&sa=X&ved=2ahUKEwjI_dKX36SOAxXD7jgGHX2aG9UQtKgLKAF6BAgQEAE&biw=544&bih=598&dpr=1"
-                target="_blank">
-                    <p> Click here to view more cat photos</p>
-                </a>
+                
+                    <p class="red-text "> Click here to view more 
+                        <a href="https://www.google.com/search?sca_esv=93b16acae32a425f&rlz=1C1ONGR_enIN991IN991&sxsrf=AE3TifM1y1-c1hqNQbv_kMSijOaAQZ5L6w:1751685012966&q=cat+photos&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIemkjk18Cn72Gp24fGkjjh6xc8y8oU3IJovU34XDyOFvEl9PQhCX-bXyx8AzQGU_JUmd7tO0Sp0t0qHqXwx4ZXWZ46FMJ_5qOlBWL317zdnko09c3cS91eOWyqKC8pqNi-T4DhtjV8zWXL8UGIxO7yEoZ63L3KD6mXO4QEFSbHyfGyMpJqQ&sa=X&ved=2ahUKEwjI_dKX36SOAxXD7jgGHX2aG9UQtKgLKAF6BAgQEAE&biw=544&bih=598&dpr=1"
+                target="_blank">  cat photos</a>
+                       </p>
+                
                 <!--target=# , # is just a placeholder-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg" alt="cute cat" height="200", width="300">
+            <img class="thick-green-border" src="https://upload.wikimedia.org/wikipedia/commons/7/74/A-Cat.jpg" alt="cute cat" height="200", width="300">
             <!--src is anc attribute and attributes are always paired with values-->
 
             <h3>Cat Lists</h3>
-            <p>Things cats <em>love</em></p>
-            <div>
+            
+            <div class="lists silver_background">
+                <p>Things cats <em>love</em></p>
             <ul>
                 <li>cat nip</li>
                 <li>laser pointer</li>
@@ -33,10 +84,10 @@
                 <li>thunder</li>
                 <li>other cats</li>
              </ol>
-             </div class="lists"> <!--div is used to style a whole section by css
+             </div> <!--div is used to style a whole section by css
              class is used to target all elements in that div-->
              <img src="catgroup.jpeg" alt="cats">
-             <form action="/submit-cat-photo"> 
+             <form class="yellow-box" action="/submit-cat-photo"> 
                 <p>Cat type</p>
                 <label for="indoor"><input type="radio" name="indoor-outdoor" id="indoor">indoor</label><br>
                 <!--order of attributes dont matter-->
