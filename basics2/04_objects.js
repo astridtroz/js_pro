@@ -56,8 +56,13 @@ const course={
     courseInstructor:"hitesh"
 }
 
-console.log(course["courseInstructor"])
-console.log(course.courseInstructor)
-const {courseInstructor}=course //best way to get values from object
+// console.log(course["courseInstructor"])
+// console.log(course.courseInstructor)
 
-console.log(courseInstructor)
+//Destructuring objects
+const {courseInstructor:instructor}=course //best way to get values from object
+//console.log(instructor)
+
+
+
+
