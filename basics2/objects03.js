@@ -1,6 +1,6 @@
  //two ways to declare objects->literal or constructor
 
-//singleton-> objects from costructor
+//singleton-> objects from constructor
 
 //object literals
 const mysym= Symbol("")
@@ -17,7 +17,7 @@ const JsUser={
 
 // console.log(JsUser.email)
 // console.log(JsUser["email"])
-// console.log(JsUser[mysym])
+ console.log(JsUser[mysym])//using symbol value
 
 //Object.freeze(JsUser)
 //JsUser.email="hi"
@@ -29,5 +29,5 @@ JsUser.greeting= function(){
 JsUser.greetingTwo= function(){
     console.log(`Hello Js user , ${this.name}`);
 }
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+//console.log(JsUser.greeting());
+//console.log(JsUser.greetingTwo());
