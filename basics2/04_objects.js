@@ -44,9 +44,20 @@ const users=[
 
 //console.log(users[0].id)
 
-console.log(Object.keys(tinderUser))//gives all keys as iterable array
-console.log(Object.values(tinderUser))//gives all values as iterable array
-console.log(Object.entries(tinderUser))//gives all key,value pair as array of array
+// console.log(Object.keys(tinderUser))//gives all keys as iterable array
+// console.log(Object.values(tinderUser))//gives all values as iterable array
+// console.log(Object.entries(tinderUser))//gives all key,value pair as array of array
 
-console.log(tinderUser.hasOwnProperty('loggedIn'))//before using a property check if it exists
+// console.log(tinderUser.hasOwnProperty('loggedIn'))//before using a property check if it exists
 
+const course={
+    coursename:"js in hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+
+console.log(course["courseInstructor"])
+console.log(course.courseInstructor)
+const {courseInstructor}=course //best way to get values from object
+
+console.log(courseInstructor)
