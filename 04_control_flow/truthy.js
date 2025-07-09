@@ -22,3 +22,4 @@ all else are truthy values
 
 const pro= null??10
 console.log(pro);
+
