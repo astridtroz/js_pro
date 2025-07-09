@@ -18,5 +18,7 @@ false    0       -0         0n         ""         null        undefined       Na
 
 all else are truthy values
 "0"    'false'           " "            []            {}             function(){}
-
 */
+
+const pro= null??10
+console.log(pro);
