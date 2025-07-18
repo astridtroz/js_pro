@@ -2,8 +2,8 @@ let score="33abs"
 //console.log(typeof score);
 
 let valuInNumber= Number(score)
-//console.log(typeof valuInNumber);
-//console.log(valuInNumber);
+// console.log(typeof valuInNumber);
+// console.log(valuInNumber);
 
 /*"33"=> 33
 "33abs"=>NaN
@@ -21,7 +21,7 @@ let booleanIsLoggedIn= Boolean(isLogggedIn);
 
 let someNumber=33
 let stringNumber= String(someNumber);
-//console.log(typeof stringNumber);
+//console.log( stringNumber);
 
 /*
 

@@ -4,12 +4,12 @@ if(true){
     let a=10
     const b=20
     var c=30
-    // console.log(`block scope value of a=${a}`)
-    // console.log(`block scope value of c=${c}`)
+    console.log(`block scope value of a=${a}`)
+    console.log(`block scope value of c=${c}`)
 }
 
-// console.log(`global scope value of a=${a}`)
-// console.log(`global scope value of c changes due to declaration by var =${c}`)
+console.log(`global scope value of a=${a}`)
+console.log(`global scope value of c changes due to declaration by var =${c}`)
 
 function outer(){
     username="saumya"

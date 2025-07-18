@@ -1,7 +1,7 @@
 const score=400
 console.log(score);
 
-const balance=new Number(100)
+const balance=new Number(100.45)
 console.log(balance);
 
 console.log(typeof balance.toString());

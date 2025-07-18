@@ -1,4 +1,4 @@
-//how data is stores and accessed in memory basis 2 types:
+//how data is stored and accessed in memory basis 2 types:
 
 //Primitive
 //call by value-> data changed in copy
@@ -11,7 +11,7 @@ Number,  Boolean, null, undefined, symbol, BigInt
 const id= Symbol('123')
 const anotherId= Symbol('123')
 
-console.log(id===anotherId);
+console.log(id==anotherId);//false symbols are not  coerced like numbers or strings
 
 const bigNumber= 327362387463287n
 console.log(typeof bigNumber);
@@ -37,12 +37,15 @@ const myFunction= function(){
 
 //Stack(Primitive)->copy, Heap(Non-Primitive)->og value
 
+//stack
 let ytname="something";
 let anothername=ytname
 anothername="chaiorcode";
 console.log(ytname);
 console.log(anothername);
 
+
+//heap
 let user1={
     email:"sam@google.com",
     upi:"user@ybl"

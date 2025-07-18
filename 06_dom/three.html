@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Learning</title>
+        <style>
+            .bg-black{
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body class="bg-black">
+    </body>
+    <script>
+        const div= document.createElement('div')
+        //console.log(div)
+        div.className="main"
+        div.id="np"
+        div.setAttribute("title", "generated")
+        div.style.backgroundColor="orange"
+        div.style.padding="12px"
+        //div.innerText="Chai aur code" //brings reference than overwrites
+        const addText=document.createTextNode("chai or code")
+        div.appendChild(addText)
+
+        document.body.appendChild(div)
+    </script>
+</html>
