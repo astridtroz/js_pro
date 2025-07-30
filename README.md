@@ -30,5 +30,5 @@ Feel free to:
 - Fork it and continue your own learning journey
 
 ```bash
-git clone https://github.com/your-username/chai-aur-javascript.git
+git clone https://github.com/astridtorz/chai-aur-javascript.git
 
